@@ -1,0 +1,84 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Div6.vf
+// /___/   /\     Timestamp : 12/13/2022 12:56:58
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Xilinx/project/Div6.vf -w C:/Xilinx/project/Div6.sch
+//Design Name: Div6
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FTC_HXILINX_Div6(Q, C, CLR, T);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              T;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+  
+   
+ 
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else if(T)
+          Q <= !Q;
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module Div6(CLKIN, 
+            CLK_OUT);
+
+    input CLKIN;
+   output CLK_OUT;
+   
+   wire XLXN_1;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_6;
+   wire XLXN_11;
+   wire XLXN_12;
+   
+   (* HU_SET = "XLXI_1_50" *) 
+   FTC_HXILINX_Div6  XLXI_1 (.C(CLKIN), 
+                            .CLR(XLXN_11), 
+                            .T(XLXN_12), 
+                            .Q(XLXN_6));
+   (* HU_SET = "XLXI_2_51" *) 
+   FTC_HXILINX_Div6  XLXI_2 (.C(CLKIN), 
+                            .CLR(XLXN_11), 
+                            .T(XLXN_6), 
+                            .Q(XLXN_4));
+   (* HU_SET = "XLXI_3_52" *) 
+   FTC_HXILINX_Div6  XLXI_3 (.C(CLKIN), 
+                            .CLR(XLXN_11), 
+                            .T(XLXN_1), 
+                            .Q(XLXN_3));
+   AND2  XLXI_4 (.I0(XLXN_4), 
+                .I1(XLXN_6), 
+                .O(XLXN_1));
+   VCC  XLXI_8 (.P(XLXN_12));
+   GND  XLXI_9 (.G(XLXN_11));
+   AND3B1  XLXI_10 (.I0(XLXN_6), 
+                   .I1(XLXN_4), 
+                   .I2(XLXN_3), 
+                   .O(CLK_OUT));
+endmodule

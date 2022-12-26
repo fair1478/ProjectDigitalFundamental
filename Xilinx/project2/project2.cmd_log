@@ -1,0 +1,75 @@
+xst -intstyle ise -ifn "C:/Xilinx/project2/project2.xst" -ofn "C:/Xilinx/project2/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc project2.ucf -p xc6slx9-tqg144-3 project2.ngc project2.ngd  
+xst -intstyle ise -ifn "C:/Xilinx/project2/project2.xst" -ofn "C:/Xilinx/project2/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc project2.ucf -p xc6slx9-tqg144-3 project2.ngc project2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -mt off project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf project2.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/project2/project2.xst" -ofn "C:/Xilinx/project2/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc project2.ucf -p xc6slx9-tqg144-3 project2.ngc project2.ngd  
+xst -intstyle ise -ifn "C:/Xilinx/project2/project2.xst" -ofn "C:/Xilinx/project2/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc project2.ucf -p xc6slx9-tqg144-3 project2.ngc project2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -mt off project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf project2.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/project2/project2.xst" -ofn "C:/Xilinx/project2/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc project2.ucf -p xc6slx9-tqg144-3 project2.ngc project2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -mt off project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf project2.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/project2/project2.xst" -ofn "C:/Xilinx/project2/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc project2.ucf -p xc6slx9-tqg144-3 project2.ngc project2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -mt off project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf project2.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc project2.ucf -p xc6slx9-tqg144-3 project2.ngc project2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -mt off project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf project2.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/project2/project2.xst" -ofn "C:/Xilinx/project2/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc project2.ucf -p xc6slx9-tqg144-3 project2.ngc project2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -mt off project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf project2.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/project2/project2.xst" -ofn "C:/Xilinx/project2/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc project2.ucf -p xc6slx9-tqg144-3 project2.ngc project2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -mt off project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf project2.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc project2.ucf -p xc6slx9-tqg144-3 project2.ngc project2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -mt off project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf project2.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc project2.ucf -p xc6slx9-tqg144-3 project2.ngc project2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -mt off project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf project2.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc project2.ucf -p xc6slx9-tqg144-3 project2.ngc project2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -mt off project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf project2.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc project2.ucf -p xc6slx9-tqg144-3 project2.ngc project2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -mt off project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf project2.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc project2.ucf -p xc6slx9-tqg144-3 project2.ngc project2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -mt off project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf project2.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc project2.ucf -p xc6slx9-tqg144-3 project2.ngc project2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -mt off project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf project2.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 

@@ -1,0 +1,23 @@
+
+
+
+NET "CLK" LOC = P123;
+
+
+
+
+
+# PlanAhead Generated physical constraints 
+
+NET "O[6]" LOC = P21;
+NET "O[5]" LOC = P16;
+NET "O[4]" LOC = P14;
+NET "O[3]" LOC = P11;
+NET "O[2]" LOC = P9;
+NET "O[1]" LOC = P7;
+NET "O[0]" LOC = P5;
+NET "START_SW" LOC = P99;
+NET "SELSW" LOC = P100;
+NET "LED_SPD2" LOC = P114;
+NET "LED_SPD1" LOC = P115;
+NET "LED_SPD0" LOC = P116;

@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan6 -refsym Div100k2 C:/Xilinx/Lab7/Div100k2.sch C:/Xilinx/project/Div100k2.sym 
+sch2sym -intstyle ise -family spartan6 -refsym Div100k2 C:/Xilinx/Lab7/Div100k2.sch C:/Xilinx/project/Div100k2.sym 

@@ -1,0 +1,9 @@
+[Inputs]
+switch
+clk
+[Outputs]
+speaker
+[BiDir]
+[ATTRIBUTES]
+VeriModel midF
+

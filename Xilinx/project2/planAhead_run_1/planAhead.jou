@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Sun Dec 11 11:34:00 2022
+# Process ID: 27516
+# Log file: C:/Xilinx/project2/planAhead_run_1/planAhead.log
+# Journal file: C:/Xilinx/project2/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Xilinx/project2/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P124 [get_ports {I[6]}]
+endgroup
+startgroup
+set_property package_pin P127 [get_ports {I[5]}]
+endgroup
+startgroup
+set_property package_pin P132 [get_ports {I[4]}]
+endgroup
+startgroup
+set_property package_pin P134 [get_ports {I[3]}]
+endgroup
+startgroup
+set_property package_pin P138 [get_ports {I[2]}]
+endgroup
+startgroup
+set_property package_pin P140 [get_ports {I[1]}]
+endgroup
+startgroup
+set_property package_pin P142 [get_ports {I[0]}]
+endgroup
+startgroup
+set_property package_pin P114 [get_ports {key[6]}]
+endgroup
+startgroup
+set_property package_pin P115 [get_ports {key[5]}]
+endgroup
+startgroup
+set_property package_pin P116 [get_ports {key[4]}]
+endgroup
+startgroup
+set_property package_pin P117 [get_ports {key[3]}]
+endgroup
+startgroup
+set_property package_pin P118 [get_ports {key[2]}]
+endgroup
+startgroup
+set_property package_pin P119 [get_ports {key[1]}]
+endgroup
+startgroup
+set_property package_pin P120 [get_ports {key[0]}]
+endgroup

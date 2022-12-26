@@ -1,0 +1,585 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.24 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.25 secs
+ 
+--> Reading design: project2.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "project2.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "project2"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : project2
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Xilinx\project\midG.v" into library work
+Parsing module <midG>.
+Analyzing Verilog file "C:\Xilinx\project\midF.v" into library work
+Parsing module <midF>.
+Analyzing Verilog file "C:\Xilinx\project\midE.v" into library work
+Parsing module <midE>.
+Analyzing Verilog file "C:\Xilinx\project\midD.v" into library work
+Parsing module <midD>.
+Analyzing Verilog file "C:\Xilinx\project\midC.v" into library work
+Parsing module <midC>.
+Analyzing Verilog file "C:\Xilinx\project\midB.v" into library work
+Parsing module <midB>.
+Analyzing Verilog file "C:\Xilinx\project\midA.v" into library work
+Parsing module <midA>.
+Analyzing Verilog file "C:\Xilinx\project2\project2.vf" into library work
+Parsing module <project2>.
+Parsing VHDL file "C:\Xilinx\project2\noteSong.vhd" into library work
+Parsing entity <noteSong>.
+Parsing architecture <Bbehavioral> of entity <notesong>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <project2>.
+Going to vhdl side to elaborate module noteSong
+
+Elaborating entity <noteSong> (architecture <Bbehavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Xilinx\project2\noteSong.vhd" Line 31: bb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\project2\noteSong.vhd" Line 32: aa should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\project2\noteSong.vhd" Line 33: aa should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\project2\noteSong.vhd" Line 34: aa should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\project2\noteSong.vhd" Line 35: bb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\project2\noteSong.vhd" Line 36: aa should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\project2\noteSong.vhd" Line 37: aa should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\project2\noteSong.vhd" Line 38: aa should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\project2\noteSong.vhd" Line 39: aa should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\project2\noteSong.vhd" Line 40: bb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\project2\noteSong.vhd" Line 41: bb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\project2\noteSong.vhd" Line 42: bb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\project2\noteSong.vhd" Line 43: bb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\project2\noteSong.vhd" Line 44: cc should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\project2\noteSong.vhd" Line 45: cc should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\project2\noteSong.vhd" Line 46: aa should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\project2\noteSong.vhd" Line 47: bb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\project2\noteSong.vhd" Line 48: bb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\project2\noteSong.vhd" Line 49: aa should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\project2\noteSong.vhd" Line 50: bb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\project2\noteSong.vhd" Line 51: bb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\project2\noteSong.vhd" Line 52: aa should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\project2\noteSong.vhd" Line 53: bb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\project2\noteSong.vhd" Line 54: aa should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\project2\noteSong.vhd" Line 55: aa should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\project2\noteSong.vhd" Line 56: aa should be on the sensitivity list of the process
+Back to verilog to continue elaboration
+
+Elaborating module <midC>.
+WARNING:HDLCompiler:413 - "C:\Xilinx\project\midC.v" Line 16: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Xilinx\project\midC.v" Line 24: Result of 22-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:634 - "C:\Xilinx\project\midC.v" Line 8: Net <flipper[1]> does not have a driver.
+
+Elaborating module <midD>.
+WARNING:HDLCompiler:413 - "C:\Xilinx\project\midD.v" Line 34: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Xilinx\project\midD.v" Line 42: Result of 22-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:634 - "C:\Xilinx\project\midD.v" Line 26: Net <flipper[1]> does not have a driver.
+
+Elaborating module <midE>.
+WARNING:HDLCompiler:413 - "C:\Xilinx\project\midE.v" Line 34: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Xilinx\project\midE.v" Line 42: Result of 22-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:634 - "C:\Xilinx\project\midE.v" Line 26: Net <flipper[1]> does not have a driver.
+
+Elaborating module <midF>.
+WARNING:HDLCompiler:413 - "C:\Xilinx\project\midF.v" Line 34: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Xilinx\project\midF.v" Line 42: Result of 22-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:634 - "C:\Xilinx\project\midF.v" Line 26: Net <flipper[1]> does not have a driver.
+
+Elaborating module <midG>.
+WARNING:HDLCompiler:413 - "C:\Xilinx\project\midG.v" Line 34: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Xilinx\project\midG.v" Line 42: Result of 22-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:634 - "C:\Xilinx\project\midG.v" Line 26: Net <flipper[1]> does not have a driver.
+
+Elaborating module <midA>.
+WARNING:HDLCompiler:413 - "C:\Xilinx\project\midA.v" Line 34: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Xilinx\project\midA.v" Line 42: Result of 22-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:634 - "C:\Xilinx\project\midA.v" Line 26: Net <flipper[1]> does not have a driver.
+
+Elaborating module <midB>.
+WARNING:HDLCompiler:413 - "C:\Xilinx\project\midB.v" Line 34: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Xilinx\project\midB.v" Line 42: Result of 22-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:634 - "C:\Xilinx\project\midB.v" Line 26: Net <flipper[1]> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <project2>.
+    Related source file is "C:\Xilinx\project2\project2.vf".
+    Summary:
+	no macro.
+Unit <project2> synthesized.
+
+Synthesizing Unit <noteSong>.
+    Related source file is "C:\Xilinx\project2\noteSong.vhd".
+    Summary:
+	no macro.
+Unit <noteSong> synthesized.
+
+Synthesizing Unit <midC>.
+    Related source file is "C:\Xilinx\project\midC.v".
+        m = 20
+        n = 20
+        C3 = 1911
+WARNING:Xst:653 - Signal <flipper<1>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <flipper<0>>.
+    Found 21-bit register for signal <counterC3>.
+    Found 21-bit adder for signal <counterC3[20]_GND_5_o_add_3_OUT> created at line 24.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+Unit <midC> synthesized.
+
+Synthesizing Unit <midD>.
+    Related source file is "C:\Xilinx\project\midD.v".
+        m = 20
+        n = 20
+        D3 = 1703
+WARNING:Xst:653 - Signal <flipper<1>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <flipper<0>>.
+    Found 21-bit register for signal <counterD3>.
+    Found 21-bit adder for signal <counterD3[20]_GND_6_o_add_3_OUT> created at line 42.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+Unit <midD> synthesized.
+
+Synthesizing Unit <midE>.
+    Related source file is "C:\Xilinx\project\midE.v".
+        m = 20
+        n = 20
+        E3 = 1517
+WARNING:Xst:653 - Signal <flipper<1>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <flipper<0>>.
+    Found 21-bit register for signal <counterE3>.
+    Found 21-bit adder for signal <counterE3[20]_GND_7_o_add_3_OUT> created at line 42.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+Unit <midE> synthesized.
+
+Synthesizing Unit <midF>.
+    Related source file is "C:\Xilinx\project\midF.v".
+        m = 20
+        n = 20
+        F3 = 1432
+WARNING:Xst:653 - Signal <flipper<1>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <flipper<0>>.
+    Found 21-bit register for signal <counterF3>.
+    Found 21-bit adder for signal <counterF3[20]_GND_8_o_add_3_OUT> created at line 42.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+Unit <midF> synthesized.
+
+Synthesizing Unit <midG>.
+    Related source file is "C:\Xilinx\project\midG.v".
+        m = 20
+        n = 20
+        G3 = 1270
+WARNING:Xst:653 - Signal <flipper<1>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <flipper<0>>.
+    Found 21-bit register for signal <counterG3>.
+    Found 21-bit adder for signal <counterG3[20]_GND_9_o_add_3_OUT> created at line 42.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+Unit <midG> synthesized.
+
+Synthesizing Unit <midA>.
+    Related source file is "C:\Xilinx\project\midA.v".
+        m = 20
+        n = 20
+        A3 = 1136
+WARNING:Xst:653 - Signal <flipper<1>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <flipper<0>>.
+    Found 21-bit register for signal <counterA3>.
+    Found 21-bit adder for signal <counterA3[20]_GND_10_o_add_3_OUT> created at line 42.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+Unit <midA> synthesized.
+
+Synthesizing Unit <midB>.
+    Related source file is "C:\Xilinx\project\midB.v".
+        m = 20
+        n = 20
+        B3 = 1012
+WARNING:Xst:653 - Signal <flipper<1>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <flipper<0>>.
+    Found 21-bit register for signal <counterB3>.
+    Found 21-bit adder for signal <counterB3[20]_GND_11_o_add_3_OUT> created at line 42.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+Unit <midB> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 7
+ 21-bit adder                                          : 7
+# Registers                                            : 14
+ 1-bit register                                        : 7
+ 21-bit register                                       : 7
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <midA>.
+The following registers are absorbed into counter <counterA3>: 1 register on signal <counterA3>.
+Unit <midA> synthesized (advanced).
+
+Synthesizing (advanced) Unit <midB>.
+The following registers are absorbed into counter <counterB3>: 1 register on signal <counterB3>.
+Unit <midB> synthesized (advanced).
+
+Synthesizing (advanced) Unit <midC>.
+The following registers are absorbed into counter <counterC3>: 1 register on signal <counterC3>.
+Unit <midC> synthesized (advanced).
+
+Synthesizing (advanced) Unit <midD>.
+The following registers are absorbed into counter <counterD3>: 1 register on signal <counterD3>.
+Unit <midD> synthesized (advanced).
+
+Synthesizing (advanced) Unit <midE>.
+The following registers are absorbed into counter <counterE3>: 1 register on signal <counterE3>.
+Unit <midE> synthesized (advanced).
+
+Synthesizing (advanced) Unit <midF>.
+The following registers are absorbed into counter <counterF3>: 1 register on signal <counterF3>.
+Unit <midF> synthesized (advanced).
+
+Synthesizing (advanced) Unit <midG>.
+The following registers are absorbed into counter <counterG3>: 1 register on signal <counterG3>.
+Unit <midG> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 7
+ 21-bit up counter                                     : 7
+# Registers                                            : 7
+ Flip-Flops                                            : 7
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <project2> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block project2, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 154
+ Flip-Flops                                            : 154
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : project2.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 651
+#      GND                         : 1
+#      INV                         : 7
+#      LUT1                        : 140
+#      LUT2                        : 157
+#      LUT3                        : 7
+#      LUT5                        : 1
+#      LUT6                        : 48
+#      MUXCY                       : 140
+#      MUXF7                       : 2
+#      VCC                         : 1
+#      XORCY                       : 147
+# FlipFlops/Latches                : 154
+#      FD                          : 154
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 28
+#      IBUF                        : 14
+#      OBUF                        : 14
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             154  out of  11440     1%  
+ Number of Slice LUTs:                  360  out of   5720     6%  
+    Number used as Logic:               360  out of   5720     6%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    360
+   Number with an unused Flip Flop:     206  out of    360    57%  
+   Number with an unused LUT:             0  out of    360     0%  
+   Number of fully used LUT-FF pairs:   154  out of    360    42%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          29
+ Number of bonded IOBs:                  29  out of    102    28%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 154   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.906ns (Maximum Frequency: 256.029MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.453ns
+   Maximum combinational path delay: 6.468ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 3.906ns (frequency: 256.029MHz)
+  Total number of paths / destination ports: 4865 / 154
+-------------------------------------------------------------------------
+Delay:               3.906ns (Levels of Logic = 3)
+  Source:            XLXI_6/counterC3_15 (FF)
+  Destination:       XLXI_6/counterC3_0 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: XLXI_6/counterC3_15 to XLXI_6/counterC3_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.981  XLXI_6/counterC3_15 (XLXI_6/counterC3_15)
+     LUT6:I0->O            3   0.203   0.879  XLXI_6/GND_5_o_GND_5_o_equal_3_o<20>5_SW0 (N9)
+     LUT6:I3->O           11   0.205   0.883  XLXI_6/GND_5_o_GND_5_o_equal_3_o<20>5 (XLXI_6/GND_5_o_GND_5_o_equal_3_o)
+     LUT2:I1->O            1   0.205   0.000  XLXI_6/counterC3_0_rstpot (XLXI_6/counterC3_0_rstpot)
+     FD:D                      0.102          XLXI_6/counterC3_0
+    ----------------------------------------
+    Total                      3.906ns (1.162ns logic, 2.744ns route)
+                                       (29.8% logic, 70.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              4.453ns (Levels of Logic = 2)
+  Source:            XLXI_6/flipper_0 (FF)
+  Destination:       speaker<6> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: XLXI_6/flipper_0 to speaker<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   0.651  XLXI_6/flipper_0 (XLXI_6/flipper_0)
+     LUT2:I1->O            1   0.205   0.579  XLXI_6/n0011<0>1 (speaker_6_OBUF)
+     OBUF:I->O                 2.571          speaker_6_OBUF (speaker<6>)
+    ----------------------------------------
+    Total                      4.453ns (3.223ns logic, 1.230ns route)
+                                       (72.4% logic, 27.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 47 / 12
+-------------------------------------------------------------------------
+Delay:               6.468ns (Levels of Logic = 4)
+  Source:            I<2> (PAD)
+  Destination:       ledOut<5> (PAD)
+
+  Data Path: I<2> to ledOut<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.222   1.109  I_2_IBUF (I_2_IBUF)
+     LUT6:I0->O            1   0.203   0.580  XLXI_5/led<5>1 (XLXI_5/led<5>)
+     LUT2:I1->O            1   0.205   0.579  XLXI_5/led<5>2 (ledOut_5_OBUF)
+     OBUF:I->O                 2.571          ledOut_5_OBUF (ledOut<5>)
+    ----------------------------------------
+    Total                      6.468ns (4.201ns logic, 2.267ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    3.906|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.01 secs
+ 
+--> 
+
+Total memory usage is 4487032 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   54 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

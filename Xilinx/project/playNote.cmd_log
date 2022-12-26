@@ -1,0 +1,4 @@
+vhdtdtfi -lib work playNote.vhd -prj project -o playNote.spl -module playNote -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 playNote.spl C:/Xilinx/project/playNote.sym 
+vhdtdtfi -lib work playNote.vhd -prj project -o playNote.spl -module playNote -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 playNote.spl C:/Xilinx/project/playNote.sym 

@@ -1,0 +1,76 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : counter0_2.vf
+// /___/   /\     Timestamp : 12/13/2022 14:19:34
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Xilinx/project/counter0_2.vf -w C:/Xilinx/project/counter0_2.sch
+//Design Name: counter0_2
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FTC_HXILINX_counter0_2(Q, C, CLR, T);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              T;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+  
+   
+ 
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else if(T)
+          Q <= !Q;
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module counter0_2(CLK_IN, 
+                  Q0, 
+                  Q1);
+
+    input CLK_IN;
+   output Q0;
+   output Q1;
+   
+   wire XLXN_2;
+   wire XLXN_8;
+   wire Q0_DUMMY;
+   wire Q1_DUMMY;
+   
+   assign Q0 = Q0_DUMMY;
+   assign Q1 = Q1_DUMMY;
+   (* HU_SET = "XLXI_1_32" *) 
+   FTC_HXILINX_counter0_2  XLXI_1 (.C(CLK_IN), 
+                                  .CLR(XLXN_8), 
+                                  .T(XLXN_2), 
+                                  .Q(Q0_DUMMY));
+   (* HU_SET = "XLXI_2_33" *) 
+   FTC_HXILINX_counter0_2  XLXI_2 (.C(CLK_IN), 
+                                  .CLR(XLXN_8), 
+                                  .T(Q0_DUMMY), 
+                                  .Q(Q1_DUMMY));
+   VCC  XLXI_3 (.P(XLXN_2));
+   AND2  XLXI_4 (.I0(Q1_DUMMY), 
+                .I1(Q0_DUMMY), 
+                .O(XLXN_8));
+endmodule

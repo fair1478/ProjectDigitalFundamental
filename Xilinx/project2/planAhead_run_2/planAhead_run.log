@@ -1,0 +1,158 @@
+
+****** PlanAhead v14.7
+  **** Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/Xilinx/project2/pa.fromHdl.tcl
+# create_project -name project2 -dir "C:/Xilinx/project2/planAhead_run_2" -part xc6slx9tqg144-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "project2.ucf" [current_fileset -constrset]
+Adding file 'C:/Xilinx/project2/project2.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {noteSong.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../project/midG.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../project/midF.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../project/midE.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../project/midD.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../project/midC.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../project/midB.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../project/midA.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {project2.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top project2 $srcset
+# add_files [list {project2.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-3
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Xilinx/project2/noteSong.vhd" into library work
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [C:/Xilinx/project2/project2.ucf]
+Finished Parsing UCF File [C:/Xilinx/project2/project2.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: f18f6df9
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P5 [get_ports {I[6]}]
+endgroup
+startgroup
+set_property package_pin P7 [get_ports {I[5]}]
+endgroup
+startgroup
+set_property package_pin P9 [get_ports {I[4]}]
+endgroup
+startgroup
+set_property package_pin P11 [get_ports {I[3]}]
+endgroup
+startgroup
+set_property package_pin P14 [get_ports {I[2]}]
+endgroup
+startgroup
+set_property package_pin P16 [get_ports {I[1]}]
+endgroup
+startgroup
+set_property package_pin P21 [get_ports {I[0]}]
+endgroup
+startgroup
+set_property package_pin P114 [get_ports {key[6]}]
+endgroup
+startgroup
+set_property package_pin P115 [get_ports {key[5]}]
+endgroup
+startgroup
+set_property package_pin P116 [get_ports {key[4]}]
+endgroup
+startgroup
+set_property package_pin P117 [get_ports {key[3]}]
+endgroup
+startgroup
+set_property package_pin P118 [get_ports {key[2]}]
+endgroup
+startgroup
+set_property package_pin P119 [get_ports {key[1]}]
+endgroup
+startgroup
+set_property package_pin P120 [get_ports {key[0]}]
+endgroup
+startgroup
+set_property package_pin P6 [get_ports {ledOut[6]}]
+endgroup
+startgroup
+set_property package_pin P8 [get_ports {ledOut[5]}]
+endgroup
+startgroup
+set_property package_pin P10 [get_ports {ledOut[4]}]
+endgroup
+startgroup
+set_property package_pin P12 [get_ports {ledOut[3]}]
+endgroup
+startgroup
+set_property package_pin P15 [get_ports {ledOut[2]}]
+endgroup
+startgroup
+set_property package_pin P17 [get_ports {ledOut[1]}]
+endgroup
+set_property package_pin "" [get_ports [list  {ledOut[0]}]]
+startgroup
+set_property package_pin P22 [get_ports {ledOut[0]}]
+endgroup
+startgroup
+set_property package_pin P99 [get_ports {speaker[6]}]
+endgroup
+startgroup
+set_property package_pin P100 [get_ports {speaker[5]}]
+endgroup
+startgroup
+set_property package_pin P101 [get_ports {speaker[4]}]
+endgroup
+startgroup
+set_property package_pin P102 [get_ports {speaker[3]}]
+endgroup
+startgroup
+set_property package_pin P104 [get_ports {speaker[2]}]
+endgroup
+startgroup
+set_property package_pin P105 [get_ports {speaker[1]}]
+endgroup
+startgroup
+set_property package_pin P111 [get_ports {speaker[0]}]
+endgroup
+startgroup
+set_property package_pin P123 [get_ports CLK]
+endgroup
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Sun Dec 11 14:42:55 2022...
+INFO: [Common 17-83] Releasing license: PlanAhead

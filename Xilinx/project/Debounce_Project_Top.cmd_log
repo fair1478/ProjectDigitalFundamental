@@ -1,0 +1,1 @@
+vhdtdtfi -prj project -o C:/Xilinx/project/Debounce_Project_Top.tfi -module Debounce_Project_Top -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror -lib work test.vhd 

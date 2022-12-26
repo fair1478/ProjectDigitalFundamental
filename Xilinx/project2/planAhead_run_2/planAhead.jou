@@ -1,0 +1,100 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Sun Dec 11 14:28:23 2022
+# Process ID: 9256
+# Log file: C:/Xilinx/project2/planAhead_run_2/planAhead.log
+# Journal file: C:/Xilinx/project2/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Xilinx/project2/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P5 [get_ports {I[6]}]
+endgroup
+startgroup
+set_property package_pin P7 [get_ports {I[5]}]
+endgroup
+startgroup
+set_property package_pin P9 [get_ports {I[4]}]
+endgroup
+startgroup
+set_property package_pin P11 [get_ports {I[3]}]
+endgroup
+startgroup
+set_property package_pin P14 [get_ports {I[2]}]
+endgroup
+startgroup
+set_property package_pin P16 [get_ports {I[1]}]
+endgroup
+startgroup
+set_property package_pin P21 [get_ports {I[0]}]
+endgroup
+startgroup
+set_property package_pin P114 [get_ports {key[6]}]
+endgroup
+startgroup
+set_property package_pin P115 [get_ports {key[5]}]
+endgroup
+startgroup
+set_property package_pin P116 [get_ports {key[4]}]
+endgroup
+startgroup
+set_property package_pin P117 [get_ports {key[3]}]
+endgroup
+startgroup
+set_property package_pin P118 [get_ports {key[2]}]
+endgroup
+startgroup
+set_property package_pin P119 [get_ports {key[1]}]
+endgroup
+startgroup
+set_property package_pin P120 [get_ports {key[0]}]
+endgroup
+startgroup
+set_property package_pin P6 [get_ports {ledOut[6]}]
+endgroup
+startgroup
+set_property package_pin P8 [get_ports {ledOut[5]}]
+endgroup
+startgroup
+set_property package_pin P10 [get_ports {ledOut[4]}]
+endgroup
+startgroup
+set_property package_pin P12 [get_ports {ledOut[3]}]
+endgroup
+startgroup
+set_property package_pin P15 [get_ports {ledOut[2]}]
+endgroup
+startgroup
+set_property package_pin P17 [get_ports {ledOut[1]}]
+endgroup
+set_property package_pin "" [get_ports [list  {ledOut[0]}]]
+startgroup
+set_property package_pin P22 [get_ports {ledOut[0]}]
+endgroup
+startgroup
+set_property package_pin P99 [get_ports {speaker[6]}]
+endgroup
+startgroup
+set_property package_pin P100 [get_ports {speaker[5]}]
+endgroup
+startgroup
+set_property package_pin P101 [get_ports {speaker[4]}]
+endgroup
+startgroup
+set_property package_pin P102 [get_ports {speaker[3]}]
+endgroup
+startgroup
+set_property package_pin P104 [get_ports {speaker[2]}]
+endgroup
+startgroup
+set_property package_pin P105 [get_ports {speaker[1]}]
+endgroup
+startgroup
+set_property package_pin P111 [get_ports {speaker[0]}]
+endgroup
+startgroup
+set_property package_pin P123 [get_ports CLK]
+endgroup
+save_constraints

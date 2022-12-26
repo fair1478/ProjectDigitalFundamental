@@ -1,0 +1,116 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf
+-ucf project2.ucf
+
+Design file:              project2.ncd
+Physical constraint file: project2.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock CLK to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+speaker<0>  |         8.517(R)|      SLOW  |         4.499(R)|      FAST  |CLK_BUFGP         |   0.000|
+speaker<1>  |         9.023(R)|      SLOW  |         4.829(R)|      FAST  |CLK_BUFGP         |   0.000|
+speaker<2>  |         8.301(R)|      SLOW  |         4.316(R)|      FAST  |CLK_BUFGP         |   0.000|
+speaker<3>  |         8.345(R)|      SLOW  |         4.429(R)|      FAST  |CLK_BUFGP         |   0.000|
+speaker<4>  |         8.334(R)|      SLOW  |         4.441(R)|      FAST  |CLK_BUFGP         |   0.000|
+speaker<5>  |         7.894(R)|      SLOW  |         4.115(R)|      FAST  |CLK_BUFGP         |   0.000|
+speaker<6>  |         8.246(R)|      SLOW  |         4.417(R)|      FAST  |CLK_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    3.595|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+I<0>           |ledOut<2>      |    8.816|
+I<0>           |ledOut<3>      |    9.036|
+I<0>           |ledOut<4>      |    8.743|
+I<0>           |ledOut<5>      |    9.259|
+I<0>           |ledOut<6>      |    9.095|
+I<1>           |ledOut<2>      |    8.733|
+I<1>           |ledOut<3>      |    8.723|
+I<1>           |ledOut<4>      |    8.681|
+I<1>           |ledOut<5>      |    9.336|
+I<1>           |ledOut<6>      |    8.731|
+I<2>           |ledOut<2>      |    8.513|
+I<2>           |ledOut<3>      |    8.532|
+I<2>           |ledOut<4>      |    8.426|
+I<2>           |ledOut<5>      |    9.298|
+I<2>           |ledOut<6>      |    8.746|
+I<3>           |ledOut<2>      |    7.715|
+I<3>           |ledOut<3>      |    7.381|
+I<3>           |ledOut<4>      |    7.606|
+I<3>           |ledOut<5>      |    8.249|
+I<3>           |ledOut<6>      |    7.832|
+I<4>           |ledOut<2>      |    7.178|
+I<4>           |ledOut<3>      |    7.371|
+I<4>           |ledOut<4>      |    7.670|
+I<4>           |ledOut<5>      |    7.537|
+I<4>           |ledOut<6>      |    7.508|
+I<5>           |ledOut<2>      |    7.616|
+I<5>           |ledOut<3>      |    7.723|
+I<5>           |ledOut<4>      |    7.440|
+I<5>           |ledOut<5>      |    8.020|
+I<5>           |ledOut<6>      |    8.328|
+I<6>           |ledOut<2>      |    8.052|
+I<6>           |ledOut<3>      |    7.302|
+I<6>           |ledOut<4>      |    7.954|
+I<6>           |ledOut<5>      |    8.647|
+I<6>           |ledOut<6>      |    8.003|
+key<0>         |speaker<0>     |    9.030|
+key<1>         |speaker<1>     |    9.151|
+key<2>         |speaker<2>     |    9.105|
+key<3>         |speaker<3>     |    8.294|
+key<4>         |speaker<4>     |    7.763|
+key<5>         |speaker<5>     |    7.172|
+key<6>         |speaker<6>     |    7.101|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Dec 14 03:32:28 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4572 MB
+
+
+

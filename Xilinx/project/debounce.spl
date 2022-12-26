@@ -1,0 +1,7 @@
+[Inputs]
+logic
+[Outputs]
+[BiDir]
+[ATTRIBUTES]
+VeriModel debounce
+

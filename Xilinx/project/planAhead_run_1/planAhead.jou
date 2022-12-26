@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Sun Dec 11 14:53:54 2022
+# Process ID: 3496
+# Log file: C:/Xilinx/project/planAhead_run_1/planAhead.log
+# Journal file: C:/Xilinx/project/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Xilinx/project/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P21 [get_ports {O[6]}]
+endgroup
+startgroup
+set_property package_pin P16 [get_ports {O[5]}]
+endgroup
+startgroup
+set_property package_pin P14 [get_ports {O[4]}]
+endgroup
+startgroup
+set_property package_pin P11 [get_ports {O[3]}]
+endgroup
+startgroup
+set_property package_pin P9 [get_ports {O[2]}]
+endgroup
+startgroup
+set_property package_pin P7 [get_ports {O[1]}]
+endgroup
+startgroup
+set_property package_pin P5 [get_ports {O[0]}]
+endgroup
+startgroup
+set_property package_pin P99 [get_ports START_SW]
+endgroup
+startgroup
+set_property package_pin P100 [get_ports SW_SELSPEED]
+endgroup
+set_property package_pin "" [get_ports [list  LED_SPD0]]
+set_property package_pin "" [get_ports [list  LED_SPD2]]
+set_property package_pin "" [get_ports [list  LED_SPD0]]
+startgroup
+set_property package_pin P101 [get_ports LED_SPD2]
+endgroup
+startgroup
+set_property package_pin P116 [get_ports LED_SPD2]
+endgroup
+startgroup
+set_property package_pin P115 [get_ports LED_SPD1]
+endgroup
+startgroup
+set_property package_pin P114 [get_ports LED_SPD0]
+endgroup
+save_constraints

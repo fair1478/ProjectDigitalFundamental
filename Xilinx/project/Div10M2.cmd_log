@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym Div10M2 C:/Xilinx/Lab7/Div10M2.sch C:/Xilinx/project/Div10M2.sym 

@@ -1,0 +1,32 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "I[6]" LOC = P5;
+NET "I[5]" LOC = P7;
+NET "I[4]" LOC = P9;
+NET "I[3]" LOC = P11;
+NET "I[2]" LOC = P14;
+NET "I[1]" LOC = P16;
+NET "I[0]" LOC = P21;
+NET "key[6]" LOC = P114;
+NET "key[5]" LOC = P115;
+NET "key[4]" LOC = P116;
+NET "key[3]" LOC = P117;
+NET "key[2]" LOC = P118;
+NET "key[1]" LOC = P119;
+NET "key[0]" LOC = P120;
+NET "speaker[6]" LOC = P124;
+NET "speaker[5]" LOC = P127;
+NET "speaker[4]" LOC = P10;
+NET "speaker[3]" LOC = P12;
+NET "speaker[2]" LOC = P15;
+NET "speaker[1]" LOC = P17;
+NET "speaker[0]" LOC = P22;
+NET "ledOut[6]" LOC = P126;
+NET "ledOut[5]" LOC = P131;
+NET "ledOut[4]" LOC = P133;
+NET "ledOut[3]" LOC = P137;
+NET "ledOut[2]" LOC = P139;
+NET "ledOut[1]" LOC = P141;
+NET "ledOut[0]" LOC = P143;
+NET "CLK" LOC = P123;

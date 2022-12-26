@@ -1,0 +1,3 @@
+vhdtdtfi -lib work C:/Xilinx/project/debounce.v -lang verilog -prj project -o debouncer.spl -module debouncer -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w debouncer.spl C:/Xilinx/project/debouncer.sym 
+vhdtdtfi -lib work C:/Xilinx/project/debounce.v -lang verilog -prj project -o debouncer.spl -module debouncer -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 

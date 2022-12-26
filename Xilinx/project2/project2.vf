@@ -1,0 +1,59 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : project2.vf
+// /___/   /\     Timestamp : 12/11/2022 11:33:44
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Xilinx/project2/project2.vf -w C:/Xilinx/project2/project2.sch
+//Design Name: project2
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module project2(CLK, 
+                I, 
+                key, 
+                ledOut, 
+                speaker);
+
+    input CLK;
+    input [6:0] I;
+    input [6:0] key;
+   output [6:0] ledOut;
+   output [6:0] speaker;
+   
+   
+   noteSong  XLXI_5 (.cin(I[6:0]), 
+                    .ledOuch(ledOut[6:0]));
+   midC  XLXI_6 (.clk(CLK), 
+                .switch(key[6]), 
+                .speaker(speaker[6]));
+   midD  XLXI_7 (.clk(CLK), 
+                .switch(key[5]), 
+                .speaker(speaker[5]));
+   midE  XLXI_8 (.clk(CLK), 
+                .switch(key[4]), 
+                .speaker(speaker[4]));
+   midF  XLXI_9 (.clk(CLK), 
+                .switch(key[3]), 
+                .speaker(speaker[3]));
+   midG  XLXI_10 (.clk(CLK), 
+                 .switch(key[2]), 
+                 .speaker(speaker[2]));
+   midA  XLXI_11 (.clk(CLK), 
+                 .switch(key[1]), 
+                 .speaker(speaker[1]));
+   midB  XLXI_12 (.clk(CLK), 
+                 .switch(key[0]), 
+                 .speaker(speaker[0]));
+endmodule

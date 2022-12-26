@@ -1,0 +1,10 @@
+vhdtdtfi -lib work C:/Xilinx/project/playNote.v -lang verilog -prj project2 -o playNote.spl -module playNote -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 playNote.spl C:/Xilinx/project2/playNote.sym 
+vhdtdtfi -lib work ../project/playNote.vhd -prj project2 -o playNote.spl -module playNote -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 playNote.spl C:/Xilinx/project2/playNote.sym 
+vhdtdtfi -lib work ../project/playNote.vhd -prj project2 -o playNote.spl -module playNote -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 playNote.spl C:/Xilinx/project2/playNote.sym 
+vhdtdtfi -lib work ../project/playNote.vhd -prj project2 -o playNote.spl -module playNote -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 playNote.spl C:/Xilinx/project2/playNote.sym 
+vhdtdtfi -lib work ../project/playNote.vhd -lib work noteSong.vhd -prj project2 -o playNote.spl -module playNote -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 playNote.spl C:/Xilinx/project2/playNote.sym 

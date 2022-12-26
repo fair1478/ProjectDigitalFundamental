@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym CS3CE C:/Xilinx/Lab7/CS3CE.sch C:/Xilinx/project/CS3CE.sym 

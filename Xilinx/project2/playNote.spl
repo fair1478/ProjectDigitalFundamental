@@ -1,0 +1,5 @@
+[Inputs]
+=cin[6:0]=
+[Outputs]
+=ledOuch[6:0]=
+[BiDir]

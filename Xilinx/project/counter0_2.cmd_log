@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym counter0_2 C:/Xilinx/project/counter0_2.sch C:/Xilinx/project/counter0_2.sym 
